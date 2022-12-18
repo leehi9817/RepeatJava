@@ -38,7 +38,12 @@ public class Point {
 	public void draw() {
 		System.out.println("점[x="+x+", y="+y+"]을 그렸습니다.");
 	}
-
+	
+	//메소드 오버로딩: 하나의 클래스에 같은 이름의 메소드가 여러 개 존재할 수 있다.
+	public void draw(Point p) {
+		System.out.println("점[x="+p.getX()+", y="+p.getY()+"]을 지웠습니다.");
+	}
+	
 	@Override
 	public String toString() {
 		return "Point [x=" + x + ", y=" + y + "]";
